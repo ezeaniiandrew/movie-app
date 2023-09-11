@@ -1,16 +1,10 @@
-import { useEffect } from "react";
-import { getTopRatedMovies } from "./api/movieDb";
 import Home from "./pages/Home";
 
 function App() {
-  useEffect(() => {
-    getTopRatedMovies();
-  });
-
   return (
-    <>
+    <div className="app">
       <Home />
-    </>
+    </div>
   );
 }
 

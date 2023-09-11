@@ -6,8 +6,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  width: clamp(320px, 100%, 1440px);
+  width: clamp(320px, 100%, 1536px);
   min-height: 100vh;
 }
