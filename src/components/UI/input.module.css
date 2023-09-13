@@ -1,0 +1,25 @@
+.input {
+  padding: 5px;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  outline: none;
+  border-radius: 10px;
+  color: var(--white);
+  width: 70%;
+  margin-left: 32px;
+}
+
+
+input::placeholder{
+  color: var(--white);
+  font-size: 0.5rem;
+}
+
+@media (min-width: 600px){
+.input {
+  margin-left: 0;
+  padding: 10px 20px;
+  min-width: 320px;
+  width: 100%;
+}
+}

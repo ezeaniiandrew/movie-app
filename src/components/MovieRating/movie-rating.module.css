@@ -1,0 +1,37 @@
+.ratingBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  column-gap: 10px;
+}
+
+.rating {
+  height: 100%;
+}
+
+
+.imgBox {
+  display: grid;
+  place-items: center;
+}
+/* .ratingBox div > p {
+  margin-bottom: -3px;
+}  */
+
+@media (min-width: 600px){
+  
+  .ratingBox{
+    width: 55%;
+  }
+
+}

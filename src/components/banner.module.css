@@ -1,0 +1,58 @@
+.textBox {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.textBox h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.textBox p {
+    /* margin-bottom: 40px; */
+    margin-top: 20px;
+    font-size: .8rem;
+  }
+
+  .textBox button {
+    background-color: red;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+  
+@media (min-width: 600px) {
+  .textBox {
+    left: 5%;
+    width: 40%;
+    transform: translateY(-50%);
+    text-align: left;
+  }
+
+  .textBox button {
+    background-color: red;
+    width: 40%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+
+@media (min-width: 900px){
+  .textBox h2 {
+    font-size: 2rem;
+  }
+  
+  .textBox p {
+    font-size: 1rem;
+  }
+}

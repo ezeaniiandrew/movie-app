@@ -1,0 +1,63 @@
+.nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 0 5px;
+  width: 100%;
+  align-items: center;
+  z-index: 2;
+}
+
+.logoBox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 20%;
+}
+
+.logoBox div {
+  width: 20px;
+  height: 20px;
+}
+
+.logoBox p {
+  font-size: 0.7rem;
+}
+
+@media (min-width: 600px) {
+  .nav {
+    justify-content: space-between;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .logoBox {
+    width: 20%;
+    gap: 20px;
+  }
+  
+  .logoBox:last-child {
+    justify-content: flex-end;
+  }
+
+  .logoBox div {
+    width: 15%;
+    height: 15%;
+    display: grid;
+    place-items: center;
+  }
+
+  .logoBox p {
+    font-size: 1.5rem;
+  }
+
+  .navBox {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+  }
+}

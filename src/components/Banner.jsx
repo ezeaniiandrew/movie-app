@@ -1,14 +1,24 @@
-import { Sheet } from "@mui/joy";
 import Poster from "../assets/Poster.png";
+import MovieRating from "./MovieRating/MovieRating";
+import Backdrop from "./Backdrop/Backdrop"
+import c from "./banner.module.css";
 
-function Banner() {
+function Banner({ movie }) {
+  
   return (
-    <Sheet
-      variant="plain"
-      sx={{ backgroundImage: `url(${Poster})`, height: "600px" }}
+    <div
+      style={{ backgroundImage: `url(${movie.posterUrl})`, height: "600px",
+      position: "relative", backgroundRepeat: "no-repeat", backgroundPosition:
+      "center center", backgroundSize: "cover" }}
     >
-      Banner
-    </Sheet>
+      <div className={c.textBox}>
+        <h2>{movie.title}</h2>
+        <MovieRating rating={movie.rating} />
+        <p className={c.movieInfo}>{movie.tagline}</p>
+        <button>Watch trailer</button>
+      </div>
+<Backdrop />
+    </div>
   );
 }
 
