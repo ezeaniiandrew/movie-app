@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import MovieRating from "../MovieRating/MovieRating";
 import c from "./movie-card.module.css";
 import { getSingleMovieDetails } from "../../api/movieDb.jsx";
-import Backdrop from "../Backdrop/Backdrop"
 import Heart from "../Heart/Heart"
 
 function MovieCard({ movie }) {
@@ -25,7 +24,7 @@ function MovieCard({ movie }) {
     <Heart handleClick={() => setIsfavourite(!isFavourite)} isFavourite={isFavourite} />
       <div style={{position: "relative", overflow: "hidden"}}>
         <img src={movie.posterUrl} alt="movie poster" />
-        <Backdrop />
+        <div className={c.backdrop}></div>
       </div>
       <div className={c.textbox}>
         <p className={c.releaseDate}>{movie.releaseDate}</p>

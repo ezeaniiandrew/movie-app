@@ -1,0 +1,123 @@
+.sidebar {
+  padding: 34px 0;
+  border: 2px solid red;
+  border-top-right-radius: 80px;
+}
+
+.navItem p,
+.logoBox p,
+.logout p {
+  display: none;
+}
+
+.navItem img,
+.logoBox img,
+.logout img {
+  width: 3rem;
+}
+
+.card {
+  display: none;
+}
+
+.nav {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+
+  
+@media (min-width: 900px) {
+  .sidebar {
+    padding: 34px 0;
+    border: 2px solid red;
+    border-top-right-radius: 80px;
+  }
+
+  .logoBox {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .logoBox div {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logoBox p {
+    font-size: 1.7rem;
+    color: black;
+    font-weight: bold;
+  }
+
+  .navItem {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 15px 25px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navItem img {
+    width: 3rem;
+  }
+
+  .navItem:not(:first-child) {
+    margin-top: 40px;
+  }
+  
+  .card {
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.2);
+    padding: 20px 15px;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .bigText {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .smallText {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 10px;
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.2);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: red;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .logout {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 20px 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .logout img {
+    width: 3rem;
+  }
+}

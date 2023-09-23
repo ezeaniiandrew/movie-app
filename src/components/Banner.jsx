@@ -1,15 +1,18 @@
 import Poster from "../assets/Poster.png";
 import MovieRating from "./MovieRating/MovieRating";
-import Backdrop from "./Backdrop/Backdrop"
 import c from "./banner.module.css";
 
 function Banner({ movie }) {
-  
   return (
     <div
-      style={{ backgroundImage: `url(${movie.posterUrl})`, height: "600px",
-      position: "relative", backgroundRepeat: "no-repeat", backgroundPosition:
-      "center center", backgroundSize: "cover" }}
+      style={{
+        backgroundImage: `url(${movie.posterUrl})`,
+        height: "600px",
+        position: "relative",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+        backgroundSize: "cover",
+      }}
     >
       <div className={c.textBox}>
         <h2>{movie.title}</h2>
@@ -17,7 +20,7 @@ function Banner({ movie }) {
         <p className={c.movieInfo}>{movie.tagline}</p>
         <button>Watch trailer</button>
       </div>
-<Backdrop />
+      <div className={c.backdrop}></div>
     </div>
   );
 }
